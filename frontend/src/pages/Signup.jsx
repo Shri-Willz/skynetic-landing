@@ -32,7 +32,7 @@ const Signup = () => {
     e.preventDefault()
     
     console.log(formData)
-    const res = await fetch("/api/register",{
+    const res = await fetch(`${import.meta.env.VITE_API_URL}/api/register`,{
       method: "POST",
       headers:{
         "content-type":"application/json",
